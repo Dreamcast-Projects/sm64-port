@@ -10,6 +10,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+#ifdef __APPLE__
+int vsnprintf(char *str, size_t size, const char *format, va_list ap);
+#endif
+
 typedef short s16;
 typedef int s32;
 typedef unsigned char u8;
